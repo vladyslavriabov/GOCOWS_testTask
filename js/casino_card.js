@@ -14,8 +14,8 @@ class casinoCard extends HTMLElement {
       this.country = this.getAttribute("country")
       this.rating = this.getAttribute("rating")
       for ( let i=1;i<=5;i++){
-        if(i<this.rating) { this.ratingStars+='<img src="/img/rating_star-enabled.svg" alt="star"></img>'}
-        else{this.ratingStars+='<img src="/img/rating_star-unable.svg" alt="star">'}
+        if(i<this.rating) { this.ratingStars+='<img src="./img/rating_star-enabled.svg" alt="star"></img>'}
+        else{this.ratingStars+='<img src="./img/rating_star-unable.svg" alt="star">'}
       } 
       JSON.parse(this.getAttribute('bonusCodes')).forEach(item => {       
         this.bonusCodes+=`<button data-code='${item.code}' data-casino='${this.name}'>${item.name}</button>`
