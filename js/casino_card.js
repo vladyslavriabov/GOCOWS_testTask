@@ -27,7 +27,7 @@ class casinoCard extends HTMLElement {
     render() {
       this.innerHTML = `
       <div class="casino">
-      <img src="/img/casino/${this.icon}" alt="ac_casino" class="casino__image">
+      <img src="./img/casino/${this.icon}" alt="ac_casino" class="casino__image">
      <div class="casino__content">
       <div class="casino__info">
       ${this.isNew ? '<span class="casino__tag-new">NEW</span>':''}
@@ -35,7 +35,7 @@ class casinoCard extends HTMLElement {
           
           <div class="casino__rating">
               <div class="casino__flag">
-                  <img src="/img/countries/${this.country}.png">
+                  <img src="./img/countries/${this.country}.png">
               </div>
               <span>${this.rating}</span>
               <div class="casino__rating-stars">             
